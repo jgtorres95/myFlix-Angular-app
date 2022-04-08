@@ -9,4 +9,6 @@ import { MatDialog } from '@angular/material/dialog';
 })
 export class AppComponent {
   title = 'myFlix-Angular-client';
-}
+
+  constructor(public dialog: MatDialog) { }
+  // This is the function that will open the dialog when the signup button is clicked  
