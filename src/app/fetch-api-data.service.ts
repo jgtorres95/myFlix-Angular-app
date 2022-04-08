@@ -15,7 +15,7 @@ export class FetchApiDataService {
   constructor(private http: HttpClient) {
   }
   // Making the api call for the user registration endpoint
-  public UserRegistration(userDetails: any): Observable<any> {
+  public userRegistration(userDetails: any): Observable<any> {
     console.log(userDetails);
     return this.http.post(apiUrl + 'users', userDetails).pipe(
       catchError(this.handleError)
