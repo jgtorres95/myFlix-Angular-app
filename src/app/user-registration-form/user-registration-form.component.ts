@@ -23,8 +23,7 @@ export class UserRegistrationFormComponent implements OnInit {
     public snackBar: MatSnackBar
   ) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
   // This is the function responsible for sending the form inputs to the backend
   registerUser(): void {
