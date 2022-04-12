@@ -15,6 +15,11 @@ import { SynopsisCardComponent } from '../synopsis-card/synopsis-card.component'
 export class MovieCardComponent implements OnInit {
   movies: any[] = [];
   constructor(public fetchApiData: FetchApiDataService) { }
+  favoriteMovies: any[] = [];
+  constructor(
+    public fetchApiData: FetchApiDataService,
+    public snackBar: MatSnackBar,
+    public dialog: MatDialog) { }
 
   ngOnInit(): void {
     this.getMovies();
