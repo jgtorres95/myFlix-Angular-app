@@ -77,3 +77,15 @@ export class MovieCardComponent implements OnInit {
     });
   }
 
+  goToSynopsis(title: string, description: string): void {
+    this.dialog.open(SynopsisCardComponent, {
+      data: {
+        Title: title,
+        Description: description,
+      },
+      width: '500px'
+    });
+
+  }
+
+}
