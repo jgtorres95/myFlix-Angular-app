@@ -46,3 +46,13 @@ export class MovieCardComponent implements OnInit {
     });
   }
 
+  getUser(): void {
+    this.fetchApiData.getUser().subscribe((resp: any) => {
+      console.log(resp)
+      const currentUser = resp.Username
+      console.log(currentUser)
+      this.favoriteMovies = resp.FavoriteMovies
+      console.log(this.favoriteMovies);
+    });
+  }
+
