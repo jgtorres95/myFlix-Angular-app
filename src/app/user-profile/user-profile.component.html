@@ -1,0 +1,29 @@
+<app-navbar></app-navbar>
+<div class="user-profile">
+  <mat-card class="user-profile-card">
+    <mat-card-header>
+      <mat-card-title>Your Profile</mat-card-title>
+    </mat-card-header>
+    <div class="divider"></div>
+    <mat-card-content class="user-profile-info">
+      <p><b>Username:</b> {{user.Username}}</p>
+      <p><b>Email:</b> {{user.Email}}</p>
+      <p><b>Birthday:</b> {{user.Birthday | date }}</p>
+    </mat-card-content>
+    <mat-card-actions class="usercard-actions">
+      <button mat-raised-button (click)="editUserProfile()" class="edit-profile-button">
+        <mat-icon>edit</mat-icon>
+        Edit profile
+      </button>
+      <button class="profile-btn" color="warn" mat-raised-button (click)="deleteUserProfile()">
+        Delete Profile
+      </button>
+    </mat-card-actions>
+  </mat-card>
+  <div class="moviebox">
+    <h2>Favourite movies</h2>
+    <mat-card *ngFor="let movie of favorites; let i = index">
+      <mat-card-title>{{ movie.title }}</mat-card-title>
+      <mat-card-subtitle><img class="movie-image" src="{{ movie.ImagePath }}" /></mat-card-subtitle>
+    </mat-card>
+  </div>
