@@ -56,3 +56,13 @@ export class MovieCardComponent implements OnInit {
     });
   }
 
+  goToGenre(name: string, description: string): void {
+    this.dialog.open(GenreCardComponent, {
+      data: {
+        Name: name,
+        Description: description,
+      },
+      width: '500px'
+    });
+  }
+
