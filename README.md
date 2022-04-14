@@ -1,27 +1,38 @@
-# MyFlixAngularClient
+# **myFlix-Angular-client**
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
+## **Overview**
 
-## Development server
+myFlix-Angular-client is a client-side application built using Angular. The application uses the myFlix API to allow users to access information about different movies, directors, and genres. The application also allows users to register and save data about their favorite movies.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## **Live Website**
 
-## Code scaffolding
+`https://jgtorres95.github.io/myFlix-Angular-app/`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## **Key Features**
 
-## Build
+- Your app should display a welcome view where users will be able to either log in or register an account.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Once authenticated, the user should now view all movies.
 
-## Running unit tests
+- Upon clicking on a particular movie, users will be taken to a single movie view where additional movie details will be displayed. The single movie view will contain the following additional features:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ -- A button that when clicked takes a user to the director view, where details about the director of that particular movie will be displayed.
 
-## Running end-to-end tests
+ -- A button that when clicked takes a user to the genre view, where details about that particular genre of the movie will be displayed.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## **Installation & Instructions**
 
-## Further help
+1. Download and install the code.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+2. Install npm `npm install`.
+
+3. Install Angular CLI `npm install -g @angular/cli`
+
+4. Run the application `ng serve`
+
+5. Navigate to `http://localhost:4200/`
+
+## **Dev Dependencies**
+
+- Angular
+- Angular Material
