@@ -1,3 +1,8 @@
+/**
+ * used to render user-registration form 
+ * @module UserRegistrationFormComponent
+ */
+
 import { Component, OnInit, Input } from '@angular/core';
 
 // You'll use this import to close the dialog on success
