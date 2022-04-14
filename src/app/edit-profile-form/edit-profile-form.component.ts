@@ -1,3 +1,8 @@
+/**
+ * used to render the edit-profile form
+ * @module EditProfileFormComponent
+ */
+
 import { Component, OnInit, Input } from '@angular/core';
 
 import { FetchApiDataService } from '../fetch-api-data.service';
@@ -14,6 +19,7 @@ export class EditProfileFormComponent implements OnInit {
 
   user: any = {};
 
+  // bind input values to the userData object
   @Input() userData = {
     Username: this.user.Username,
     Password: this.user.Password,
@@ -32,7 +38,6 @@ export class EditProfileFormComponent implements OnInit {
   }
 
   getUser(): void {
-    const user = localStorage.getItem('user');
     this.fetchApiData.getUser().subscribe((response: any) => {
       this.user = response;
       console.log(response);
