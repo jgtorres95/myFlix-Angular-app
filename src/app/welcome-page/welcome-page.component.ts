@@ -1,3 +1,8 @@
+/**
+ * used to render the welcome page
+ * @module WelcomePageComponent
+ */
+
 import { Component, OnInit } from '@angular/core';
 import { UserLoginFormComponent } from '../user-login-form/user-login-form.component';
 import { UserRegistrationFormComponent } from '../user-registration-form/user-registration-form.component';
