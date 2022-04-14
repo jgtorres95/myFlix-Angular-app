@@ -1,3 +1,8 @@
+/**
+ * used to render the synopsis-card
+ * @module SynopsisCardComponent
+ */
+
 import { Component, OnInit, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 
