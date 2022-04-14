@@ -1,3 +1,8 @@
+/**
+ * used to render the user-login form
+ * @module UserLoginFormComponent
+ */
+
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { UserLoginFormComponent } from './user-login-form.component';
@@ -8,9 +13,9 @@ describe('UserLoginFormComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ UserLoginFormComponent ]
+      declarations: [UserLoginFormComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {
