@@ -1,3 +1,8 @@
+/**
+ * used to render the user profile
+ * @module UserProfileComponent
+ */
+
 import { Component, OnInit } from '@angular/core';
 
 // This import brings in the API calls we created in 6.2
