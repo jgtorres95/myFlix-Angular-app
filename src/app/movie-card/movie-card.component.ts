@@ -1,3 +1,8 @@
+/**
+ * used to render the movie-card
+ * @module MovieCardComponent
+ */
+
 import { Component, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatDialog } from '@angular/material/dialog';
