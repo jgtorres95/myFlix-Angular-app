@@ -1,3 +1,8 @@
+/**
+ * used to render the navbar
+ * @module NavbarComponent
+ */
+
 import { Component, OnInit } from '@angular/core';
 
 import { FetchApiDataService } from '../fetch-api-data.service';
