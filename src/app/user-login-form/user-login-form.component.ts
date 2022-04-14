@@ -1,3 +1,8 @@
+/**
+ * used to render the user-login form
+ * @module UserLoginFormComponent
+ */
+
 import { Component, OnInit, Input } from '@angular/core';
 
 // You'll use this import to close the dialog on success
