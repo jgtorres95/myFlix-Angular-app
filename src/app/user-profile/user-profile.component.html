@@ -21,9 +21,14 @@
     </mat-card-actions>
   </mat-card>
   <div class="moviebox">
-    <h2>Favourite movies</h2>
+    <h2>Favorite movies</h2>
     <mat-card *ngFor="let movie of favorites; let i = index">
-      <mat-card-title>{{ movie.title }}</mat-card-title>
+      <mat-card-title>{{ movie.Title }}</mat-card-title>
       <mat-card-subtitle><img class="movie-image" src="{{ movie.ImagePath }}" /></mat-card-subtitle>
+      <mat-card-actions>
+        <button mat-icon-button (click)="removeFavorite(movie._id)">
+          <mat-icon>delete_outline</mat-icon>
+        </button>
+      </mat-card-actions>
     </mat-card>
   </div>
