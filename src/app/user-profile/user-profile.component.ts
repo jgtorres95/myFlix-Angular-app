@@ -62,11 +62,10 @@ export class UserProfileComponent implements OnInit {
   }
 
   getFavorites(): void {
-    let movies: any[] = [];
     this.fetchApiData.getAllMovies().subscribe((res: any) => {
-      movies = res;
-      movies.forEach((movie: any) => {
-        if (this.user.FavouriteMovies.includes(movie._id)) {
+      this.movies = res;
+      this.movies.forEach((movie: any) => {
+        if (this.user.FavoriteMovies.includes(movie._id)) {
           this.favorites.push(movie);
         }
       });
@@ -80,8 +79,10 @@ export class UserProfileComponent implements OnInit {
         duration: 2000,
       });
       this.ngOnInit();
-      return this.favorites;
     })
+    setTimeout(function () {
+      window.location.reload();
+    }, 1000);
   }
 }
 
